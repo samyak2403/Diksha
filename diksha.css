@@ -1,0 +1,98 @@
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #1D1E23;
+}
+
+header {
+  background-color: #1D1E23;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  width: 70%;
+  margin: 20px auto;
+}
+
+article {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  width: 25%;
+  float: right;
+  margin-top: 20px;
+}
+
+.banner-ad {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.centered-ad {
+  text-align: center;
+  margin-bottom: 20px;
+}
+h1 span {
+  color: #BD53ED;
+  position: relative;
+}
+h1 span::before {
+  content: "";
+  height: 30px;
+  width: 2px;
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  background: #BD53ED;
+  transform: translateY(-45%);
+  animation: blink 0.7s infinite;
+}
+h1 span.stop-blinking::before {
+  animation: none;
+}
+@keyframes blink {
+  50% { opacity: 0 }
+}
+<!---->
+.music-card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+.music-image img {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.music-details {
+  padding: 8px;
+}
+
+.music-details h2 {
+  margin: 0;
+  font-size: 1em;
+}
+
+.music-details p {
+  margin-top: 3px;
+  color: #888;
+  font-size: 0.8em;
+}
+
+.audio-controls {
+  width: 100%;
+  margin-top: 5px;
+}
+/* Adjust styles for responsiveness and additional enhancements */
